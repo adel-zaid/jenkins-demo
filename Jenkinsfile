@@ -1,8 +1,6 @@
 pipeline {
-    agents any
-    tools {
-        tool name: 'gradle', type: 'gradle'
-    }
+    agent any
+
 
     stages {
         stage ('Pull changes') {
