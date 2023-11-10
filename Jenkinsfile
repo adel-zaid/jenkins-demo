@@ -1,7 +1,7 @@
 pipeline {
     agents any
     tools {
-        tool name: 'gradle', type: 'gradle'
+        gradle : 'gradle'
     }
 
     stages {
