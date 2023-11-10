@@ -1,8 +1,6 @@
 pipeline {
     agent any
-    tools {
-        gradle '8.3'
-    }
+
 
     stages {
         stage ('Pull changes') {
