@@ -5,12 +5,12 @@ pipeline {
     }
 
     stages {
-        stage (Pull changes) {
+        stage ('Pull changes') {
             steps {
                 git branch: 'main', url: 'https://github.com/adel-zaid/jenkins-demo'
             }
         }
-        stage (Build) {
+        stage ('Build') {
             steps {
                 sh "./gradlew clean build"
             }
